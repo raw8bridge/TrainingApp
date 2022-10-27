@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Workouts</h1>
+<h1>トレーニング一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Default times</th>
-      <th>Default seconds</th>
+      <th>トレーニング名</th>
+      <th>回数（デフォルト）</th>
+      <th>秒数（デフォルト）</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +18,9 @@
         <td><%= workout.name %></td>
         <td><%= workout.default_times %></td>
         <td><%= workout.default_seconds %></td>
-        <td><%= link_to 'Show', workout %></td>
-        <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
-        <td><%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', workout %></td>
+        <td><%= link_to '編集', edit_workout_path(workout) %></td>
+        <td><%= link_to '削除', workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Workout', new_workout_path %>
+<%= link_to 'トレーニングを追加', new_workout_path %>
