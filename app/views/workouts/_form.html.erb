@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <label for="workout_name">トレーニング名</label>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :default_times %>
+    <label for="workout_name">回数（デフォルト）</label>
     <%= form.number_field :default_times %>
   </div>
 
   <div class="field">
-    <%= form.label :default_seconds %>
+    <label for="workout_name">秒数（デフォルト）</label>
     <%= form.number_field :default_seconds %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "送信" %>
   </div>
 <% end %>

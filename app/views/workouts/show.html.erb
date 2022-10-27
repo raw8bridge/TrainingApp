@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>トレーニング名:</strong>
   <%= @workout.name %>
 </p>
 
 <p>
-  <strong>Default times:</strong>
+  <strong>回数（デフォルト）:</strong>
   <%= @workout.default_times %>
 </p>
 
 <p>
-  <strong>Default seconds:</strong>
+  <strong>秒数（デフォルト）:</strong>
   <%= @workout.default_seconds %>
 </p>
 
-<%= link_to 'Edit', edit_workout_path(@workout) %> |
-<%= link_to 'Back', workouts_path %>
+<%= link_to '編集', edit_workout_path(@workout) %> |
+<%= link_to '戻る', workouts_path %>
